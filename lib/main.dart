@@ -8,14 +8,14 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return new MaterialApp(
-      title: 'Instagram',
+      title: 'Test Now',
       debugShowCheckedModeBanner: false,
       theme: new ThemeData(
           primarySwatch: Colors.blue,
           primaryColor: Colors.black,
           primaryIconTheme: IconThemeData(color: Colors.black),
           primaryTextTheme: TextTheme(
-              title: TextStyle(color: Colors.black, fontFamily: "Aveny")),
+              title: TextStyle(color: Colors.red, fontFamily: "Aveny")),
           textTheme: TextTheme(title: TextStyle(color: Colors.black))),
       home: new InstaHome(),
     );

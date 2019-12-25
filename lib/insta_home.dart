@@ -3,16 +3,20 @@ import 'package:flutter_insta_clone/insta_body.dart';
 
 class InstaHome extends StatelessWidget {
   final topBar = new AppBar(
-    backgroundColor: new Color(0xfff8faf8),
+    //backgroundColor: new Color(0xfff8faf8),
+    backgroundColor: new Color(0xFF009600),
     centerTitle: true,
     elevation: 1.0,
-    leading: new Icon(Icons.camera_alt),
+    //leading: new Icon(Icons.camera_alt),
+    leading: new Icon(Icons.arrow_back_ios),
+    iconTheme: IconThemeData(color: Colors.white),
     title: SizedBox(
-        height: 35.0, child: Image.asset("assets/images/insta_logo.png")),
+        //height: 65.0, child: Image.asset("assets/images/insta_logo.png")),
+        height: 65.0, child: Image.asset("assets/images/hooprun_logo.png")),
     actions: <Widget>[
       Padding(
         padding: const EdgeInsets.only(right: 12.0),
-        child: Icon(Icons.send),
+        child: Icon(Icons.share),
       )
     ],
   );
@@ -33,7 +37,7 @@ class InstaHome extends StatelessWidget {
               children: <Widget>[
                 new IconButton(
                   icon: Icon(
-                    Icons.home,
+                    Icons.contacts,
                   ),
                   onPressed: () {},
                 ),

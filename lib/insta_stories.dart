@@ -5,7 +5,7 @@ class InstaStories extends StatelessWidget {
     mainAxisAlignment: MainAxisAlignment.spaceBetween,
     children: <Widget>[
       Text(
-        "Stories",
+        "Players in this run",
         style: TextStyle(fontWeight: FontWeight.bold),
       ),
       new Row(
@@ -19,12 +19,12 @@ class InstaStories extends StatelessWidget {
 
   final stories = Expanded(
     child: new Padding(
-      padding: const EdgeInsets.only(top: 8.0),
+      padding: const EdgeInsets.only(top: 0.0),
       child: new ListView.builder(
         scrollDirection: Axis.horizontal,
-        itemCount: 5,
+        itemCount: 9,
         itemBuilder: (context, index) => new Stack(
-              alignment: Alignment.bottomRight,
+              alignment: Alignment.topCenter,
               children: <Widget>[
                 new Container(
                   width: 60.0,
@@ -34,7 +34,7 @@ class InstaStories extends StatelessWidget {
                     image: new DecorationImage(
                         fit: BoxFit.fill,
                         image: new NetworkImage(
-                            "https://pbs.twimg.com/profile_images/916384996092448768/PF1TSFOE_400x400.jpg")),
+                            "https://images.pexels.com/photos/1484792/pexels-photo-1484792.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=400&w=400")),
                   ),
                   margin: const EdgeInsets.symmetric(horizontal: 8.0),
                 ),
@@ -60,7 +60,7 @@ class InstaStories extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return new Container(
-      margin: const EdgeInsets.all(16.0),
+      //margin: const EdgeInsets.all(16.0),
       child: new Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
         mainAxisAlignment: MainAxisAlignment.start,
